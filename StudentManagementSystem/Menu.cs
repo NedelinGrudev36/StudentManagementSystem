@@ -23,7 +23,12 @@ namespace StudentManagementSystem
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("Add Student");
+                        Console.WriteLine("Enter name:");
+                        string name = Console.ReadLine();
+
+                        Console.WriteLine("Enter age:");
+                        int age = int.Parse(Console.ReadLine());
+
                         break;
 
                     case "2":
