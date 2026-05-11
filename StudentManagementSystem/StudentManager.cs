@@ -14,5 +14,13 @@ namespace StudentManagementSystem
         {
             Students.Add(student);
         }
+
+        public void ShowStudents()
+        {
+            foreach (var student in Students)
+            {
+                Console.WriteLine(student.Name + " " + student.Age);
+            }
+        }
     }
 }
