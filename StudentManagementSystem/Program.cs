@@ -6,6 +6,8 @@
         {
             Menu menu = new Menu();
             menu.ShowMenu();
+
+            Console.WriteLine("Hello");
         }
     }
 }
