@@ -29,5 +29,14 @@ namespace StudentManagementSystem
         {
             File.AppendAllText("students.txt", name + " " + age + "\n");
         }
+        public void LoadStudents()
+        {
+            string[] lines = File.ReadAllLines("students.txt");
+
+            foreach (var line in lines)
+            {
+                Console.WriteLine(line);
+            }
+        }
     }
 }
