@@ -25,5 +25,9 @@ namespace StudentManagementSystem
         {
             File.AppendAllText("students.txt", text + "\n");
         }
+        public void SaveStudent(string name, int age)
+        {
+            File.AppendAllText("students.txt", name + " " + age + "\n");
+        }
     }
 }
