@@ -17,5 +17,9 @@ namespace StudentManagementSystem
         {
             return File.ReadAllText("students.txt");
         }
+        public void CreateFile()
+        {
+            File.Create("students.txt").Close();
+        }
     }
 }
